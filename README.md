@@ -17,6 +17,12 @@ npm install
 
 -   `dev` - run app
 
+### Screenshot
+
+<div align="center"> 
+ <img src="https://user-images.githubusercontent.com/103638111/226822148-88fe3e71-56d0-46dd-b60f-33b3065c149c.png" alt="screenshot" />
+</div>
+
 ### Directories
 
 ```sh
@@ -30,6 +36,8 @@ npm install
         ├── `config.ts`                 # env files
         ├── `store.ts`                  # Redux config store
     ├── pages                       # React pages
+        ├── `Home.tsx`                  # Home page without using Redux
+        ├── `HomeRedux.tsx`             # Home page with Redux
     ├── services                    # Services - most of the business logic must be here
     ├── socket.io                   # Socket io initialization
         ├── `socket.io.tsx`             
@@ -52,7 +60,7 @@ npm install
 -   [moment][moment] - date parser
 -   [react-router-dom][react-router-dom] - router
 -   [react-toastify][react-toastify] - real time notifications
--   [socket.io-client][socket.io-client] - our web socket used for real-time communication with the server, paired together with [socket.io-][socket.io].
+-   [socket.io-client][socket.io-client] - our web socket used for real-time communication with the server, paired together with [socket.io][socket.io].
 -   [uuid][uuid] - used for unique id creation
 
 ### env
