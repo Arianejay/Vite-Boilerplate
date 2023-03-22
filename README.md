@@ -19,7 +19,7 @@ npm install
 
 ### Directories
 
-.
+```sh
 ├── public  
 ├── src
     ├── assets                      # Used for medias (images, videos, files).
@@ -43,7 +43,7 @@ npm install
 ├── `tsconfig.json`                    
 ├── `tsconfig.node.json`                   
 └── `vite.config.ts`          
-
+```
 
 ### Dependencies
 
