@@ -116,7 +116,7 @@ const Home: React.FC = () => {
                 </div>
                 <div className="home__body">
                     {todos &&
-                        todos.map((item: ITask | {}, idx: number) => (
+                        todos.map((item: ITask, idx: number) => (
                             <div className="home__list" key={idx}>
                                 <div className="home__todo">
                                     <input
