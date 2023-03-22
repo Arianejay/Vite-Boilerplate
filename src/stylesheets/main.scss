@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+@import "./variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+// BUTTONS
+button {
+    width: 4rem;
+    height: 2rem;
+    font-family: inherit;
+    background: $blue;
+    color: $white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: $boxShadowButton;
+}
+.add--button {
+    width: 5rem;
+}
+.edit--button {
+    background: $green;
+}
+.delete--button {
+    background: $red;
+}
+
+// MAIN CONTAINEr
+.home__container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// HOME BOX
+.home__box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1.5px solid $gray;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    width: 30%;
+    box-shadow: $boxShadowBox;
+}
+
+// HOME HEADER
+.home__header {
+    margin: 1rem 0 2rem 0;
+}
+
+// HOME INPUT
+.home__input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 1rem 0;
+
+    input {
+        width: 75%;
+        height: 2rem;
+        outline: none;
+        border: 1.5px solid $gray;
+        border-radius: 5px;
+        padding: 0 0.5rem;
+    }
+}
+
+// HOME BODY
+.home__body {
+    width: 100%;
+
+    .home__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .home__actions, .home__todo {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+// HOME FOOTER
+.home__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1.5px solid $gray;
+    
+    p {    
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+}
